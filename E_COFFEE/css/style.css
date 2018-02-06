@@ -169,10 +169,6 @@ nav ul li {
 	justify-content: space-around;
 	align-items: center;
 	padding: 10px;
-	
-
-
-	
 }
 
 .line {
@@ -187,11 +183,12 @@ nav ul li {
 	background-color: rgba(0, 0, 0, 0.3);
 	display: flex;
 	flex-direction: column;
+	transition: all 0.5s ease-in-out;
 }
 
 .line:hover {
 	background-color: rgba(255, 255, 255, 0.2);
-	transition: all 0.5s ease-in-out;
+	transform: scale(1.01);
 }
 
 .line p {
@@ -253,6 +250,57 @@ footer {
 	margin: 0px 10px;
 	font-size: 14px;
 	color: gray;
+}
+
+
+/*for sides: coffeenav, about coffee, coffee news*/
+.panel {
+	width: 80%;
+	max-width: 920px;
+	height: 80%;
+	min-height: 400px;
+	/*height: 600px;*/
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+	padding: 20px;
+}
+.searchbox {
+	width: 80%;
+	height: 60px;
+	background-color: rgba(0, 0, 0, 0.4);
+}
+.contentbox {
+	margin-top: 20px;
+	width: 80%;
+	max-height: 400px;
+	overflow: scroll;
+/*	background-color: black;*/
+}
+.place {
+	padding: 10px;
+	display: flex;
+	align-items: center;
+	background-color: rgba(0, 0, 0, 0.4);
+	transition: all 0.5s ease-in-out;
+}
+.place:hover {
+	background-color: rgba(50, 50, 50, 0.2);
+}
+.logo {
+	width: 100px;
+	height: 100px;
+/*	background-color: green;*/
+}
+.info {
+	color: white;
+	/*background-color: red;*/
+	padding: 10px;
+	font-family: Arial;
+	font-size: 18px;
+	text-align: left;
+	align-content: center;
 }
 
 
